@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="myorg" class="com.radostin.springdemo.Organization">
+	<constructor-arg value="BMW" index="0" name="companyName"></constructor-arg>
+	<constructor-arg value="1929" index="1"
+		name="yearOfIncorporation">
+	</constructor-arg>
+	<property name="postalCode" value="55566"></property>
+	<property name="employeeCount" value="1000"></property>
+	</bean>
+</beans>

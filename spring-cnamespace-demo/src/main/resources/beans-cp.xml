@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="myorg" class="com.radostin.springdemo.domain.Organization"
+		c:companyName="BMW" c:yearOfIncorporation="1929" c:address-ref="address" />
+
+	<bean id="address" class="com.radostin.springdemo.domain.Address"
+		c:street="Studentska 12" c:city="Ruse" c:zipCode="7004"/>
+
+	
+</beans>
